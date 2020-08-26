@@ -3,7 +3,7 @@ import React from 'react';
 
 class DelayedButton extends React.Component {
 
-    handleClick = event => {
+    handleDelay = event => {
         event.persist(); //makes event persistant / removes it from being pooled
         // const target = event
         // console.log(target)
@@ -14,7 +14,7 @@ class DelayedButton extends React.Component {
 
     render() {
         return (
-            <button onClick={this.handleClick}>Delayed</button>
+            <button onClick={this.handleDelay}>Delayed</button>
         )
     }
 }
